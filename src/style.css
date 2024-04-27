@@ -1,0 +1,55 @@
+html,
+body {
+  height: 100%
+}
+
+* {
+  margin: 0;
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  isolation: isolate;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  table {
+    width: 100%;
+
+    &,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+
+      &:last-child,
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+
+    tr input {
+      height: 100%;
+      width: 100%;
+      background: none;
+      border: none;
+      font-weight: inherit;
+      font-family: inherit;
+      font-size: inherit;
+      text-align: inherit;
+    }
+
+    thead,
+    tfoot {
+      background-color: lightgray;
+    }
+
+  }
+
+}
