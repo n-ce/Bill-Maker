@@ -1,5 +1,9 @@
 import './style.css';
 
+// Eruda
+if (import.meta.env.DEV)
+  import('eruda').then(eruda => eruda.default.init());
+
 
 const tbody = <HTMLTableSectionElement>document.querySelector('tbody');
 const tfoot = <HTMLTableSectionElement>document.querySelector('tfoot');
