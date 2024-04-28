@@ -17,9 +17,23 @@ body {
   isolation: isolate;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  --fontSize: 1rem;
+
+  header {
+    padding: 0;
+  }
+
+  button {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    width: 3rem;
+  }
 
   table {
     width: 100%;
+    font-size: var(--fontSize);
 
     &,
     th,
@@ -33,6 +47,11 @@ body {
       }
     }
 
+    td,
+    th {
+      padding: 0 2%;
+    }
+
 
     tr input {
       height: 100%;
@@ -43,6 +62,7 @@ body {
       font-family: inherit;
       font-size: inherit;
       text-align: inherit;
+      outline: none;
     }
 
     thead,

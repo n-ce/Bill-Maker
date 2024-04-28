@@ -1,4 +1,5 @@
 import './style.css';
+import './fontSize';
 
 // Eruda
 if (import.meta.env.DEV)
@@ -51,7 +52,7 @@ function insertRow(d1: string, d2: string) {
       sum += parseInt((n as HTMLInputElement).value) || 0;
     });
 
-    sumTotal.textContent = String(sum);
+    sumTotal.textContent = sum.toString();
 
   });
   td2.appendChild(input2);
