@@ -41,7 +41,10 @@ body {
       border: 1px solid black;
       border-collapse: collapse;
 
-      &:last-child,
+      &:first-child {
+        text-align: left;
+      }
+
       &:last-child {
         text-align: right;
       }
@@ -51,7 +54,6 @@ body {
     th {
       padding: 0 2%;
     }
-
 
     tr input {
       height: 100%;
